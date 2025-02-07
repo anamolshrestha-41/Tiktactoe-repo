@@ -27,12 +27,12 @@ box.forEach((boxes)=>{
 //Function for checking winner
 function checkWinner(){
     for(let strategy of winStrategy){
-        let a = box[strategy[0]].innerText;
-        let b = box[strategy[1]].innerText;
-        let c = box[strategy[2]].innerText;
+        let pos1 = box[strategy[0]].innerText;
+        let pos2 = box[strategy[1]].innerText;
+        let pos3 = box[strategy[2]].innerText;
         if(a==b && b==c && a!=""){
             setTimeout(()=>{
-                alert(`Player ${box[a].innerText} wins!!`);
+                alert(`Player ${pos1} wins!!`);
                 resetGame();
             });
             return;
