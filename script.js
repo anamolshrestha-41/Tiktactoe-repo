@@ -20,7 +20,8 @@ box.forEach((boxes)=>{
             boxes.innerText="X";
             turn= true;
         }
-        boxes.disabled=true;
+        // boxes.disabled=true;
+        boxes.style.pointerEvents = "none"; // Disable clicks
         checkWinner();
     });
 });
@@ -45,8 +46,9 @@ function checkWinner(){
 function resetGame(){
     box.forEach((boxes)=>{
         boxes.innerText="";
-        boxes.disabled=false;
+        boxes.style.pointerEvents = "auto";
         });
+        turn=true;
     };
 
 //Event Listener for Game Changer... hahahaha
