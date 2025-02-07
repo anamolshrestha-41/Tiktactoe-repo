@@ -30,7 +30,7 @@ function checkWinner(){
         let pos1 = box[strategy[0]].innerText;
         let pos2 = box[strategy[1]].innerText;
         let pos3 = box[strategy[2]].innerText;
-        if(a==b && b==c && a!=""){
+        if(pos1==pos2 && pos2==pos3 && pos1!=""){
             setTimeout(()=>{
                 alert(`Player ${pos1} wins!!`);
                 resetGame();
