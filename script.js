@@ -1,3 +1,4 @@
+//Accessing part
 let box= document.querySelectorAll(".box");
 let resetButton = document.querySelector("#game-reset");
 let turn = true;
