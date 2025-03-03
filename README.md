@@ -9,4 +9,4 @@ This is a simple game game with the help of some frontend tools (HTML, CSS, JAVA
 - "O" and "X" as turn for players
 - alert message
 - 9 boxes with good UserInterface
-- sounds added in progress (Background, Clicks, and winning)
+- sounds added(Background, Clicks, and winning)

@@ -9,9 +9,9 @@ const winStrategy=[
 ];
 
 //sounds accessing
-const click = new Audio("/sound/click.mp3");
-const winSound = new Audio("/sound/Win.mp3");
-const bgSound = new Audio("/sound/backGround.mp3");
+const click = new Audio("./sound/click.mp3");
+const winSound = new Audio("./sound/Win.mp3");
+const bgSound = new Audio("./sound/backGround.mp3");
 
 bgSound.loop=true;
 bgSound.volume=0.01;
@@ -19,6 +19,7 @@ bgSound.volume=0.01;
 window.addEventListener("load", ()=>{
     bgSound.play();
 } );
+
 
 //Adding Event Listeners for each buttons to access and sound.
 boxes.forEach((box)=>{
